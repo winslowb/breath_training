@@ -26,6 +26,12 @@ def check_quit():
 
 def play_sound(sound_file):
     """Plays the sound file using mpg123 with quiet output."""
+    try:
+        # play sound asynchronously
+        subprocess.Popen(["mpg123", "-q", sound_file])
+    except Exception:
+        # ignore playback errors
+        pass
 
 def breathing_coach(inhale, hold, exhale, rounds):
     print("Breathing coach started. Press 'q' then Enter at any time to quit.")
