@@ -1,0 +1,8 @@
+{
+  "inhale": 4,
+  "hold": 4,
+  "exhale": 4,
+  "hold2": 4,
+  "rounds": 4,
+  "enable_audio": true
+}
