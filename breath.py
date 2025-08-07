@@ -83,7 +83,7 @@ def countdown(phase_name, seconds, sound_file=None, enable_audio=True, window=No
             print(line, end='\r', flush=True)
         check_quit(window)
         time.sleep(1)
-    end_line = f"{phase_name:<22} Done {'●'*20}"
+    end_line = f"{phase_name:<22} Done {'●' * 20}"
     if window:
         window.clear()
         window.addstr(0, 0, end_line)
@@ -184,7 +184,7 @@ def main(use_curses=False):
     parser.add_argument("--hold", type=int, default=defaults["hold"], help="Hold (after inhale) duration in seconds.")
     parser.add_argument("--exhale", type=int, default=defaults["exhale"], help="Exhale duration in seconds.")
     parser.add_argument("--hold2", type=int, default=defaults["hold2"], help="Hold (after exhale) duration in seconds.")
-    parser.add_argument("--rounds", type=int, default=defaults["rounds"], help="Number of breathing cycles (blank or <=0 = infinite).")
+    parser.add_argument("--rounds", type=int, default=defaults["rounds"], help="Number of cycles (<=0 for infinite).")
     parser.add_argument("--no-sound", action="store_true", help="Disable audio cues.")
     parser.add_argument("--use-curses", action="store_true", help="Use curses for UI display.")
     args = parser.parse_args()

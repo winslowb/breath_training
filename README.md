@@ -13,6 +13,7 @@
  - Python 3
  - mpg123 (install via `sudo apt update && sudo apt install mpg123`)
  - Sound files (`gong-inhale.mp3`, `ding.mp3`, `gong-exhale.mp3`) placed alongside the script.
+- Development dependencies: install dev tools via `pip install -r requirements-dev.txt`
 
  ## Usage
  ```bash
